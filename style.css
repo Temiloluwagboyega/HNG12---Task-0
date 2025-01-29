@@ -1,0 +1,94 @@
+
+body{
+    /* padding: 1px; */
+    background: #111827;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.container{
+    display: grid;
+    justify-content: center;
+    align-self: center;
+    /* background: rgb(0, 0, 0); */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.profile-card{
+    display:flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    background: #111827;
+    border: 0.0005px solid #374157;
+    border-radius: 20px;
+    padding: 50px;
+    
+}
+.left-side img{
+    border-radius: 50%;
+}
+.left-side{ 
+    color: white;
+    display: grid;
+    gap: -10px;
+    line-height: 10px;
+}
+.link-icon i{
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #374157;
+}
+.tech-card{
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: 50px;
+    gap: 40px;
+    
+}
+h2{
+    color: white;
+    border-bottom: 4px solid #374157 ;
+    /* border-radius: 20px; */
+}
+.card{
+    border: 1px solid #374157;
+    padding: 10px 30px ;
+    border-radius: 10px;
+}
+.card:nth-child(1){
+    color: #e34c26;
+}
+.card:nth-child(2){
+    color: #264de4;
+}
+.card:nth-child(3){
+    color: yellow;
+}
+.card:nth-child(4){
+    color: #61DBFB;
+}
+.card:nth-child(5){
+    color: #FFD43B;
+}
+.card:nth-child(6){
+    color: white;
+}
+.card:nth-child(7){
+    color: orangered;
+}
+
+
+@media screen  and (max-width:790px) {
+    .profile-card{
+        justify-content: center;
+    }
+    .left-side{
+        text-align: center;
+    }
+    .tech-card{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
