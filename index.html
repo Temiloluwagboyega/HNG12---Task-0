@@ -5,24 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/e285bd6dfc.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <script defer>
+        function updateTime() {
+            document.getElementById("utc-time").textContent = new Date().toUTCString();
+        }
+        updateTime();
+        setInterval(updateTime, 1000);
+    </script>
+    <title>Profile Card</title>
 </head>
 <body>
     <div class="container">
         <div class="profile-card">
             <div class="left-side">
                 <div class="image">
-                    <img src="https://ca.slack-edge.com/T086NG3N69Y-U08A8CGUG79-0c5b4049ef86-100" alt="" data-testid="profilePicture">
+                    <img src="https://ca.slack-edge.com/T086NG3N69Y-U08A8CGUG79-0c5b4049ef86-100" alt="Profile Picture" data-testid="profilePicture">
                 </div>
                 <div class="infos">
                     <div class="name">
                         <h4 data-testid="fullName">Full Name: Gboyega Temiloluwa Marvelous</h4>
                     </div>
                     <div class="job">
-                        <h4 data-testid="jobTitle">Job tile: <small>Software Engineer</small></h4>
+                        <h4 data-testid="jobTitle">Job title: <small>Software Engineer</small></h4>
                     </div>
                     <div class="bio">
-                        <h4 data-testid="shortBio">Bio: I am a Passionate web developer <br><br> who crave to learn more and build more</h4>
+                        <h4>Bio:</h4>
+                        <p data-testid="shortBio">I am a passionate web developer who craves learning and building more.</p>
                     </div>
                     <div class="location">
                         <h4 data-testid="currentLocation">My Current Location: Lagos, Nigeria</h4>
@@ -31,54 +39,30 @@
                         <h4 data-testid="emailAddress">Email address: temiloluwagboyega@gmail.com</h4>
                     </div>
                     <div class="link">
-                        <h4 >Link to my profile</h4>
+                        <h4>Link to my profile</h4>
                         <div class="link-icon">
                             <a href="https://www.linkedin.com/in/temiloluwa-gboyega-5212632b1/" data-testid="socialLinks"><i class="fa-brands fa-linkedin"></i></a>
                             <a href="https://github.com/Temiloluwagboyega" data-testid="socialLinks"><i class="fa-brands fa-github"></i></a>
                         </div>
                     </div>
                     <div class="time">
-                        <h4 data-testid="currentTimeUTC">Current Time: </h4><p  id="utc-time"></p>
+                        <h4 data-testid="currentTimeUTC">Current Time: </h4><p id="utc-time"></p>
                     </div>
                 </div>
             </div>
             <div class="right-side">
                 <h2>Technologies</h2>
-
                 <div class="tech-card">
-                    <div class="card">
-                        <i class="fa-brands fa-html5"></i>
-                    </div>
-                    <div class="card">
-                        <i class="fa-brands fa-css"></i>       
-                     </div>
-                     <div class="card">
-                         <i class="fa-brands fa-js"></i>
-                     </div>
-                     <div class="card">
-                         <i class="fa-brands fa-react"></i>
-                        </div>
-                        <div class="card">
-                            <i class="fa-brands fa-python" ></i>
-                        </div>
-                        <div class="card">
-                        <i class="fa-brands fa-github"></i>
-                    </div>
-                    <div class="card">
-                        <i class="fa-brands fa-git"></i>
-                    </div>
+                    <div class="card"><i class="fa-brands fa-html5"></i></div>
+                    <div class="card"><i class="fa-brands fa-css3-alt"></i></div>
+                    <div class="card"><i class="fa-brands fa-js"></i></div>
+                    <div class="card"><i class="fa-brands fa-react"></i></div>
+                    <div class="card"><i class="fa-brands fa-python"></i></div>
+                    <div class="card"><i class="fa-brands fa-github"></i></div>
+                    <div class="card"><i class="fa-brands fa-git"></i></div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- <img src="./Screenshot 2025-01-29 033727.png" alt="">
-    <input type="color"> -->
 </body>
-<script>
-    function updateTime() {
-        document.getElementById("utc-time").textContent = new Date().toUTCString();
-    }
-    updateTime();
-    setInterval(updateTime, 1000);
-</script>
 </html>
